@@ -1,0 +1,27 @@
+﻿@using bookwebbapp1.Models;
+@model List<Book>;
+
+
+<table>
+    <tr>
+    <th>ID</th>
+    <th> Name </th>
+    <th> Writer</th>
+    <th> Description</th>
+    </tr>
+
+    
+    @foreach (var item in Model)
+    {
+
+        <tr>    
+            <td> @item.Id </td>
+            <td> @item.Name </td>
+            <td> @item.Writer </td>
+            <td> @item.Description </td>
+          
+        </tr>
+
+    }
+
+</table>

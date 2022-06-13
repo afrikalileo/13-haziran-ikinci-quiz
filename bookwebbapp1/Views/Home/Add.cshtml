@@ -1,0 +1,35 @@
+﻿@model bookwebbapp1.Models.Book
+
+      <style>
+       div {
+           color : tomato 
+       }
+
+      </style>
+
+    <form action ="/Home/Add" method="post">
+        <div>
+             @Html.LabelFor(x => x.Id)
+             @Html.TextBoxFor(x => x.Id)
+        </div>
+       <div>
+           @Html.LabelFor(x => x.Name)
+           @Html.TextBoxFor(x => x.Name)
+       </div>
+        <div>
+           @Html.LabelFor(x => x.Writer)
+           @Html.TextBoxFor(x => x.Writer)
+       </div>
+        <div>
+           @Html.LabelFor(x => x.Description)
+           @Html.TextBoxFor(x => x.Description)
+       </div>
+
+       <div>
+           <input type="submit" name="Add"/>
+
+       </div>
+
+
+
+    </form>
